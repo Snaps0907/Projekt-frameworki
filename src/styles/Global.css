@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+}
+
+body {
+    background: var(--platinium);
+}
+
+:root {
+    --White:#fff;
+    --opacityWhite: rgba(255, 255, 255, 0.801);
+    --richBlack: #0d1b2a;
+    --oxfordBlue: #1b263b;
+    --blue: #415a77;
+    --gray: rgb(146, 146, 146);
+    --mediumGray: rgb(110, 110, 110);
+    --darkGray: rgb(68, 68, 68);
+    --shadowBlue: #a6bcd8;
+    --platinium: #e0e1dd;
+    --shadow: 4px 4px 8px 1px #8e8e8e;
+    --btnShadow: 1px 1px 1px 0px rgb(56, 56, 56);
+    --opacityGray: rgba(128, 128, 128, 0.705);
+    --Lato: 'Lato', sans-serif;
+    --overlay: linear-gradient( 180deg, rgba(0, 0, 0, 0.2329306722689075) 0%, rgba(0, 0, 0, 0.5690651260504201) 30%, rgba(0, 0, 0, 1) 100%);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: var(--Lato);
+    cursor: pointer;
+}
+
+.entitiesStyle {
+    font-family: var(--Lato);
+}
+
+button {
+    font-family: var(--Lato);
+    color: var(--blue);
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-weight: bold;
+}
+
+button::before {
+    color: var(--shadowBlue) !important;
+}
+
+button::after {
+    color: var(--richBlack) !important;
+}
+
+button::before,
+button::after,
+h2::after {
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    display: inline-block;
+}
+
+.whiteBtn {
+    box-shadow: 1px 1px 2px 0.5px #8e8e8e;
+    background: white;
+    border-radius: 5px;
+    padding: 2px;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.paginationBox {
+    margin: 0 auto;
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0 20px 0;
+    cursor: pointer;
+    color: var(--mediumGray);
+}
+
+.paginationBtn {
+    color: var(--blue);
+}
+
+.paginationDisable {
+    color: red;
+}
+
+.paginationAcive {
+    color: var(--blue);
+    font-weight: bold;
+}
